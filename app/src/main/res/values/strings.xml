@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">MyFitPlan</string>
+
+    <!-- Календарь -->
+    <string name="january">Январь</string>
+    <string name="february">Февраль</string>
+    <string name="march">Март</string>
+    <string name="april">Апрель</string>
+    <string name="may">Май</string>
+    <string name="june">Июнь</string>
+    <string name="july">Июль</string>
+    <string name="august">Август</string>
+    <string name="september">Сентябрь</string>
+    <string name="october">Октябрь</string>
+    <string name="november">Ноябрь</string>
+    <string name="december">Декабрь</string>
+
+    <!-- Календарь (дни недели) -->
+    <string name="mon">Пн</string>
+    <string name="tue">Вт</string>
+    <string name="wed">Ср</string>
+    <string name="thu">Чт</string>
+    <string name="fri">Пт</string>
+    <string name="sat">Сб</string>
+    <string name="sun">Вс</string>
+
+    <!-- Common -->
+    <string name="today">Сегодня</string>
+    <string name="workout">Тренировка</string>
+    <string name="weight_progress">Динамика веса</string>
+
+    <string-array name="levels_array">
+        <item>Начинающий</item>
+        <item>Активный</item>
+        <item>Опытный</item>
+    </string-array>
+
+    <string-array name="goals_array">
+        <item>Похудение</item>
+        <item>Поддержание формы</item>
+        <item>Набор массы</item>
+    </string-array>
+</resources>

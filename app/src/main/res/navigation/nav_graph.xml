@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_create_profile">
+
+    <!-- Создание профиля -->
+    <fragment
+        android:id="@+id/nav_create_profile"
+        android:name="com.example.myfitplan.fragments.CreateProfileFragment"
+        android:label="Создать профиль"
+        tools:layout="@layout/fragment_create_profile">
+
+        <action
+            android:id="@+id/action_createProfile_to_profile"
+            app:destination="@id/nav_profile" />
+    </fragment>
+
+    <!-- Профиль -->
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.myfitplan.fragments.ProfileFragment"
+        android:label="Профиль"
+        tools:layout="@layout/fragment_profile">
+
+        <action
+            android:id="@+id/action_profile_to_workoutPlan"
+            app:destination="@id/nav_exercise_list" />
+
+        <action
+            android:id="@+id/action_profile_to_editProfile"
+            app:destination="@id/nav_edit_profile" />
+
+        <action
+            android:id="@+id/action_profile_to_calendar"
+            app:destination="@id/nav_calendar" />
+    </fragment>
+
+    <!-- Редактирование профиля -->
+    <fragment
+        android:id="@+id/nav_edit_profile"
+        android:name="com.example.myfitplan.fragments.EditProfileFragment"
+        android:label="Редактирование"
+        tools:layout="@layout/fragment_edit_profile">
+
+        <action
+            android:id="@+id/action_any_to_profile"
+            app:destination="@id/nav_profile" />
+
+        <action
+            android:id="@+id/action_any_to_progress"
+            app:destination="@id/nav_progress" />
+
+        <action
+            android:id="@+id/action_any_to_calendar"
+            app:destination="@id/nav_calendar" />
+
+        <action
+            android:id="@+id/action_editProfile_to_createPlan"
+            app:destination="@id/nav_workout_plan" />
+    </fragment>
+
+    <!-- Прогресс -->
+    <fragment
+        android:id="@+id/nav_progress"
+        android:name="com.example.myfitplan.fragments.ProgressFragment"
+        android:label="Прогресс"
+        tools:layout="@layout/fragment_progress">
+
+        <action
+            android:id="@+id/action_any_to_profile"
+            app:destination="@id/nav_profile" />
+
+        <action
+            android:id="@+id/action_any_to_progress"
+            app:destination="@id/nav_progress" />
+
+        <action
+            android:id="@+id/action_any_to_calendar"
+            app:destination="@id/nav_calendar" />
+
+        <action
+            android:id="@+id/action_any_to_create_plan"
+            app:destination="@id/nav_workout_plan" />
+    </fragment>
+
+    <!-- Календарь -->
+    <fragment
+        android:id="@+id/nav_calendar"
+        android:name="com.example.myfitplan.fragments.CalendarFragment"
+        android:label="Календарь"
+        tools:layout="@layout/fragment_calendar">
+
+        <action
+            android:id="@+id/action_any_to_profile"
+            app:destination="@id/nav_profile" />
+
+        <action
+            android:id="@+id/action_any_to_progress"
+            app:destination="@id/nav_progress" />
+
+        <action
+            android:id="@+id/action_any_to_calendar"
+            app:destination="@id/nav_calendar" />
+
+        <action
+            android:id="@+id/action_calendar_to_workout_plan"
+            app:destination="@id/nav_workout_plan" />
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_workout_plan"
+        android:name="com.example.myfitplan.fragments.WorkoutPlanFragment"
+        android:label="План тренировки"
+        tools:layout="@layout/fragment_workout_plan">
+
+        <action
+            android:id="@+id/action_workoutPlan_to_calendar"
+            app:destination="@id/nav_calendar" />
+
+        <action
+            android:id="@+id/action_workoutPlan_to_exerciseDetail"
+            app:destination="@id/nav_exercise_detail" />
+    </fragment>
+
+
+    <!-- Список упражнений -->
+    <fragment
+        android:id="@+id/nav_exercise_list"
+        android:name="com.example.myfitplan.fragments.ExerciseListFragment"
+        android:label="План тренировки"
+        tools:layout="@layout/fragment_exercise_list">
+
+        <action
+            android:id="@+id/action_exerciseList_to_exerciseDetail"
+            app:destination="@id/nav_exercise_detail" />
+    </fragment>
+
+    <!-- Детали упражнения -->
+    <fragment
+        android:id="@+id/nav_exercise_detail"
+        android:name="com.example.myfitplan.fragments.ExerciseDetailFragment"
+        android:label="Детали упражнения"
+        tools:layout="@layout/fragment_exercise_detail">
+
+        <action
+            android:id="@+id/action_exerciseDetail_to_createPlan"
+            app:destination="@id/nav_exercise_list" />
+    </fragment>
+
+</navigation>

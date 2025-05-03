@@ -1,0 +1,36 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Базовая тема без ActionBar -->
+    <style name="Theme.MyFitPlan" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
+        <item name="colorOnPrimary">@color/colorOnPrimary</item>
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="android:statusBarColor">@color/colorPrimaryVariant</item>
+        <item name="android:navigationBarColor">@color/colorPrimary</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowBackground">@color/white</item>
+
+        <!-- Кастомные стили -->
+        <item name="buttonStyle">@style/Widget.MyFitPlan.Button</item>
+        <item name="materialButtonStyle">@style/Widget.MyFitPlan.MaterialButton</item>
+    </style>
+
+    <!-- Стили для кнопок -->
+    <style name="Widget.MyFitPlan.Button" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorOnPrimary</item>
+    </style>
+
+    <style name="Widget.MyFitPlan.MaterialButton" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorOnPrimary</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+
+    <!-- Стиль для BottomNavigation -->
+    <style name="BottomNavigationStyle" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="itemIconTint">@drawable/nav_icon_selector</item>
+        <item name="itemTextColor">@drawable/nav_icon_selector</item>
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+</resources>

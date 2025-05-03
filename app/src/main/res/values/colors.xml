@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="orange_50">#FFF3E0</color>
+    <color name="orange_100">#FFE0B2</color>
+    <color name="orange_200">#FFCC80</color>
+    <color name="orange_300">#FFB74D</color>
+    <color name="orange_400">#FFA726</color>
+    <color name="orange_500">#FF9800</color>
+    <color name="orange_600">#FB8C00</color>
+    <color name="orange_700">#F57C00</color>
+    <color name="orange_800">#EF6C00</color>
+    <color name="orange_900">#E65100</color>
+    <color name="nav_selected_color">#FFFFFF</color>
+    <color name="nav_icon_color">#AFAFAF</color>
+
+    <!-- Theme colors -->
+    <color name="colorPrimary">@color/orange_500</color>
+    <color name="colorPrimaryVariant">@color/orange_700</color>
+    <color name="colorSecondary">@color/black</color>
+    <color name="colorOnPrimary">@android:color/white</color>
+
+    <!-- Theme colors (night) -->
+    <color name="night_colorPrimary">#FF2D2D2D</color>
+    <color name="night_colorPrimaryVariant">#FF000000</color>
+    <color name="night_colorOnPrimary">#FFFFFFFF</color>
+    <color name="night_colorSecondary">#FF03DAC5</color>
+    <color name="night_background">#FF121212</color>
+</resources>

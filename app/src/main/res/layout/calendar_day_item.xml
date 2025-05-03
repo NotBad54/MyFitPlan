@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:orientation="vertical"
+    android:background="@drawable/day_bg"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/day_text"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"/>
+
+    <View
+        android:id="@+id/workout_indicator"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_gravity="bottom|end"
+        android:background="@drawable/workout_indicator_bg"/>
+
+</LinearLayout>
+
+
